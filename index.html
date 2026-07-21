@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Designer Portfolio</title>
+    <!-- Simplified CSS for layout -->
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+        :root { --bg: #0a0a0c; --accent: #6366f1; --text: #f3f4f6; --text-muted: #9ca3af; --card: #121215; }
+        body { background-color: var(--bg); color: var(--text); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        header { padding: 1rem 0; border-bottom: 1px solid #27272a; position: sticky; top: 0; background: rgba(10,10,12,0.9); }
+        .hero { min-height: 80vh; display: flex; align-items: center; text-align: center; }
+        .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .hero span { color: var(--accent); }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .card { background: var(--card); padding: 1.5rem; border-radius: 12px; border: 1px solid #27272a; transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); border-color: var(--accent); }
+        .placeholder { height: 200px; background: #333; border-radius: 8px; margin-bottom: 1rem; }
+        footer { text-align: center; padding: 2rem; color: var(--text-muted); }
+    </style>
+</head>
+<body>
+    <header><div class="container"><strong>DESIGNER</strong></div></header>
+    <main class="container">
+        <section class="hero">
+            <div>
+                <h1>Modern <span>Digital Design</span> Portfolio</h1>
+                <p>Welcome to my creative space.</p>
+            </div>
+        </section>
+        <section id="work">
+            <h2>Projects</h2>
+            <div class="grid">
+                <div class="card"><div class="placeholder"></div><h3>Project One</h3><p>Description</p></div>
+                <div class="card"><div class="placeholder"></div><h3>Project Two</h3><p>Description</p></div>
+                <div class="card"><div class="placeholder"></div><h3>Project Three</h3><p>Description</p></div>
+            </div>
+        </section>
+    </main>
+    <footer>&copy; 2026 Portfolio</footer>
+</body>
+</html>
